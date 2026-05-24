@@ -1,0 +1,28 @@
+# Portfolio robots.txt
+# Allows search engines to crawl all content
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Specific instructions for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandexbot
+Allow: /
+
+# Delay for aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://samarthagasthya.github.io/sitemap.xml

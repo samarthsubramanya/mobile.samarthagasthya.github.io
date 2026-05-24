@@ -1,0 +1,10 @@
+{
+  "name": "samarth-mobile-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "./gradlew syncMobileDist",
+    "dev": "./gradlew jsBrowserDevelopmentRun --continuous",
+    "clean": "./gradlew clean"
+  }
+}
