@@ -3,7 +3,8 @@ import org.gradle.api.tasks.Sync
 import org.gradle.api.tasks.wrapper.Wrapper
 
 plugins {
-    kotlin("multiplatform") version "2.3.0"
+    kotlin("multiplatform") version "2.3.20"
+    kotlin("plugin.compose") version "2.3.20"
 }
 
 group = "dev.samarthagasthya"
@@ -18,6 +19,14 @@ kotlin {
             }
         }
         binaries.executable()
+    }
+
+    sourceSets {
+        jsMain.dependencies {
+            implementation("org.jetbrains.compose.html:html-core:1.11.1")
+            implementation("org.jetbrains.compose.html:html-svg:1.11.1")
+            implementation("org.jetbrains.compose.runtime:runtime:1.11.1")
+        }
     }
 }
 

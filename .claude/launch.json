@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mobile-portfolio-dev",
+      "runtimeExecutable": "./gradlew",
+      "runtimeArgs": ["jsBrowserDevelopmentRun", "--continuous"],
+      "port": 8080
+    },
+    {
+      "name": "mobile-portfolio-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "build/dist/js/developmentExecutable"],
+      "port": 8090
+    }
+  ]
+}
